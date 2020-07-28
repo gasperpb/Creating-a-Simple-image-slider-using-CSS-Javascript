@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Simple image slider </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <section>
+        <img src="img1_large.jpg" id="slider">
+        <ul class="navigation">
+            <li onclick="imgSlide('img1_large.jpg')"><img src="img1_thumb.jpg"></li>
+            <li onclick="imgSlide('img2_large.jpg')"><img src="img2_thumb.jpg"></li>
+            <li onclick="imgSlide('img3_large.jpg')"><img src="img3_thumb.jpg"></li>
+            <li onclick="imgSlide('img4_large.jpg')"><img src="img4_thumb.jpg"></li>
+        </ul>
+        <h2>Simple image slider</h2>
+
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.getElementById("slider").src = anything;
+        }
+    </script>
+
+
+</body>
+
+</html>
